@@ -3,17 +3,17 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
-import { Tab1Page } from './tab1.page';
+import { PlaystationPage } from './playstation.page';
 
-import { Tab1PageRoutingModule } from './tab1-routing.module';
+import { PlaystationPageRoutingModule } from './playstation-routing.module';
 
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
-    Tab1PageRoutingModule
+    PlaystationPageRoutingModule
   ],
-  declarations: [Tab1Page]
+  declarations: [PlaystationPage]
 })
-export class Tab1PageModule {}
+export class PlaystationPageModule {}

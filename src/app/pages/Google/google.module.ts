@@ -3,17 +3,17 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
-import { Tab2Page } from './tab2.page';
+import { GooglePage } from './google.page';
 
-import { Tab2PageRoutingModule } from './tab2-routing.module';
+import { GooglePageRoutingModule} from './google-routing.module';
 
 @NgModule({
   imports: [
     IonicModule,
     CommonModule,
     FormsModule,
-    Tab2PageRoutingModule
+    GooglePageRoutingModule
   ],
-  declarations: [Tab2Page]
+  declarations: [GooglePage]
 })
-export class Tab2PageModule {}
+export class GooglePageModule {}

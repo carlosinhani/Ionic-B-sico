@@ -9,15 +9,15 @@ const routes: Routes = [
     children: [
       {
         path: 'tab1',
-        loadChildren: () => import('../pages/tab1/tab1.module').then(m => m.Tab1PageModule)
+        loadChildren: () => import('../pages/Playstation/playstation.module').then(m => m.PlaystationPageModule)
       },
       {
         path: 'tab2',
-        loadChildren: () => import('../pages/tab2/tab2.module').then(m => m.Tab2PageModule)
+        loadChildren: () => import('../pages/Google/google.module').then(m => m.GooglePageModule)
       },
       {
         path: 'tab3',
-        loadChildren: () => import('../pages/tab3/tab3.module').then(m => m.Tab3PageModule)
+        loadChildren: () => import('../pages/X-Box/x-box.module').then(m => m.XBoxPageModule)
       },
       {
         path: '',
