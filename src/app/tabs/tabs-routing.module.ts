@@ -20,6 +20,10 @@ const routes: Routes = [
         loadChildren: () => import('../pages/X-Box/x-box.module').then(m => m.XBoxPageModule)
       },
       {
+        path: 'tab4',
+        loadChildren:() => import('../pages/Nitendo/nitendo.module').then(m=> m.NitendoPageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'
