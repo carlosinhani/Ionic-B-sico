@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-playstation',
   templateUrl: 'playstation.page.html',
@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class PlaystationPage {
 
-  constructor() {}
+
+  constructor(
+     private router: Router
+  ) {}
+
 
 }

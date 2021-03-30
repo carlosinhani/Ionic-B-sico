@@ -1,3 +1,5 @@
+import { XBoxPage } from './../X-Box/x-box.page';
+import { XBoxPageModule } from './../X-Box/x-box.module';
 import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -14,6 +16,9 @@ import { PlaystationPageRoutingModule } from './playstation-routing.module';
     FormsModule,
     PlaystationPageRoutingModule
   ],
-  declarations: [PlaystationPage]
+  declarations: [
+    PlaystationPage,
+    XBoxPage
+  ]
 })
 export class PlaystationPageModule {}
