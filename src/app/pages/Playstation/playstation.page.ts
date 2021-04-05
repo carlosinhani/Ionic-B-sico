@@ -13,5 +13,12 @@ export class PlaystationPage {
      private router: Router
   ) {}
 
+  public contaSony():void{
+    alert("usuario errado")
+  }
+
+  ionViewDidLoad() {
+     this.contaSony();
+  }
 
 }
