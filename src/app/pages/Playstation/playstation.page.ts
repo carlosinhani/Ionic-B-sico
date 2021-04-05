@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
 })
 export class PlaystationPage {
 
+  public playStore:string = "Nome do Usuário";
 
   constructor(
      private router: Router
