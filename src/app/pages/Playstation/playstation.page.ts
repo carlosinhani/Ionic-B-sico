@@ -13,12 +13,12 @@ export class PlaystationPage {
      private router: Router
   ) {}
 
-  public contaSony():void{
-    alert("usuario errado")
+  contaSony(num1, num2):void{
+    alert( num1 + num2 );
   }
 
-  ionViewDidLoad() {
-     this.contaSony();
+  result(){
+    this.contaSony(10, 99);
   }
 
 }
