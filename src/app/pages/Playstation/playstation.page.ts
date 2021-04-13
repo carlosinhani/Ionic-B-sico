@@ -11,14 +11,6 @@ export class PlaystationPage {
 
   constructor(
      private router: Router
-  ) {}
-
-  contaSony(num1, num2):void{
-    alert( num1 + num2 );
-  }
-
-  result(){
-    this.contaSony(10, 99);
-  }
+  ) { }
 
 }
