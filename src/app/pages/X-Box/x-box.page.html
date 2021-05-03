@@ -2,7 +2,22 @@
   <ion-title> X-Box </ion-title>
 </ion-header>
 
-<ion-content>
-  <button (click)="clicando()">Eu sou a página 3</button>
-  <p>Porra Velho</p>
+<ion-content >
+  <ion-slides pager class="altura">
+    <ion-slide>
+      <img class="img" src="../../../assets/img/xbox.jpg">
+      <h2>X-Box 360</h2>
+    </ion-slide>
+
+    <ion-slide>
+      <h2>X-Box One</h2>
+      <img class="img" src="../../../assets/img/xone.jpg">
+    </ion-slide>
+
+    <ion-slide>
+      <h2>X-Box Series X </h2>
+      <img class="img" src="../../../assets/img/xbox-series-x.png">
+    </ion-slide>
+
+  </ion-slides>
 </ion-content>

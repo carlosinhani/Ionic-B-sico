@@ -13,15 +13,19 @@ const routes: Routes = [
         loadChildren: () => import('../pages/Playstation/playstation.module').then(m => m.PlaystationPageModule)
       },
       {
-        path: 'tab2',
-        loadChildren: () => import('../pages/home/home.module').then(m => m.HomePageModule)
+        path:'tab2',
+        loadChildren: ()=> import('../pages/home/home.module').then(m =>m.HomePageModule)
       },
-
+      
       {
         path: 'tab3',
         loadChildren: () => import('../pages/X-Box/x-box.module').then(m => m.XBoxPageModule)
       },
-      
+      {
+        path: '',
+        redirectTo: '/tabs/tab1',
+        pathMatch: 'full'
+      }
     ]
   },
   {
@@ -34,4 +38,4 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forChild(routes)],
 })
-export class TabsPageRoutingModule { }
+export class TabsPageRoutingModule {}
