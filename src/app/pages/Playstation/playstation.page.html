@@ -1,29 +1,48 @@
 <ion-header>
-  
+
 </ion-header>
 
 <ion-content padding>
   <ion-card>
     <ion-item>
       <ion-avatar item-start>
-        <img src="../../../assets/img/playstation ps5.jpg" />
+        <img src="../../../assets/img/Plastation/playstation ps5.jpg" />
       </ion-avatar>
       <h2 class="psnStore">{{ playStore }}</h2>
     </ion-item>
   </ion-card>
 
-  <img src="../../../assets/img/console.jpg" />
+  <ion-slides pager>
 
-  <ion-card-content>
-    <p>
-      Sony convida para "dar uma olhada no futuro dos jogos com o PlayStation 5"
-      em transmissão ao vivo no canal da fabricante.
-    </p>
-  </ion-card-content>
+    <ion-slide class="psn">
+      <h2>PS1</h2>
+      <img class="img" src="../../../assets/img/Plastation/PS1_Fat.png">
+    </ion-slide>
 
-  <div>
-    <button type="button" [routerLink]="['xbox']">
-       <p class="xbox">Principal concorrente na linha de console X-Box Series X</p>
-    </button>
-  </div>
+    <ion-slide class="psn">
+      <h2>PS2</h2>
+      <img class="img" src="../../../assets/img/Plastation/PS2.png">
+    </ion-slide>
+
+    <ion-slide class="psn">
+      <h2>PS3</h2>
+      <img class="img" src="../../../assets/img/Plastation/ps3.png">
+    </ion-slide>
+
+    <ion-slide class="psn">
+      <h2>PS4</h2>
+      <img class="img" src="../../../assets/img/Plastation/Ps4.png">
+    </ion-slide>
+
+    <ion-slide class="psn">
+      <h2>PS5</h2>
+      <img class="img" src="../../../assets/img/Plastation/ps5.png">
+    </ion-slide>
+
+  </ion-slides>
+  <h1><a class="store" href="https://store.playstation.com/pt-br/latest" target="_blank">PlaStation</a></h1>
+  <p>
+    Sony convida para "dar uma olhada no futuro dos jogos com o PlayStation "
+    em transmissão ao vivo no canal da fabricante.
+  </p>
 </ion-content>

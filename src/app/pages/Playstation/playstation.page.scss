@@ -1,14 +1,43 @@
 .psnStore {
-    color:white;
-    font-family: monospace;
+  color: #3f32b6;
+  font-family: monospace;
+  margin-left: 20px;
+
 }
-p{
+
+h1 {
+  color: #292079;
+  text-align: center;
   font-weight: bold;
 }
 
-.xbox{
-  color: green;
+p {
+  font-family: monospace;
+  font-size: 15px;
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 
+.psn {
+  height: 300px;
+  background-color: #292079;
 
+  .img {
+    height: 250px;
+    width: 250px;
+
+  }
+
+}
+
+.store{
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-top: 10px;
+  height: 50px;
+  
+}
