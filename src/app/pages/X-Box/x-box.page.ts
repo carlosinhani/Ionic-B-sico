@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['x-box.page.scss']
 })
 export class XBoxPage {
-  varios: [20, 15, 21];
+  
+  public xBoxLive:string = "XBox" 
+
   constructor() {}
 
 
