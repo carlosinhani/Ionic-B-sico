@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ListaService } from './../service/lista.service';
+import { Informacao } from '../service/lista';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.page.html',
@@ -7,24 +10,36 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePage implements OnInit {
 
-  public lista_objetos = {
-    consoles: [{
-         console1: "Playstation",
-         versao1: "PS5"
-       },
-       {
-         console2: "XBox",
-         versao2:"XBox Series X"
-       }
-    ],   
-    vendas: "PlaysTation",
-    plataformasOnline: "Xbox",
-    exclusivos: "PS5",   
-  }
+  public lista: Informacao
 
-  constructor() { }
+  constructor(
+    private dados: ListaService
+  ) {
+  
+   }
 
   ngOnInit() {
+    this.dados.getLista().subscribe
+    (
+      (res)=> {
+        this.lista= res;
+      },
+      (error) => {
+        console.log("Error" + error);
+      }
+    )
   }
+
+  // controle() {
+  //   this.dados.getLista().subscribe
+  //     (
+  //       (response) => {
+  //         this.lista = response;
+  //       },
+  //       (error) => {
+  //         console.log("Error" + error);
+  //       }
+  //     )
+  // }
 
 }

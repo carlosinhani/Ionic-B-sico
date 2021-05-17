@@ -8,6 +8,9 @@ import { IonicModule } from '@ionic/angular';
 import { HomePageRoutingModule } from './home-routing.module';
 
 import { HomePage } from './home.page';
+import { ListaService } from '../service/lista.service';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   imports: [
@@ -15,8 +18,15 @@ import { HomePage } from './home.page';
     FormsModule,
     IonicModule,
     MaterialModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    HttpClientModule
   ],
-  declarations: [HomePage]
+  declarations: 
+  [HomePage  
+  ],
+  providers:[
+    ListaService
+  ]
+
 })
 export class HomePageModule {}
