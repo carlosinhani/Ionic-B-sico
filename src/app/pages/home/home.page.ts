@@ -7,6 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePage implements OnInit {
 
+  public lista_objetos = {
+    consoles: [{
+         console1: "Playstation",
+         versao1: "PS5"
+       },
+       {
+         console2: "XBox",
+         versao2:"XBox Series X"
+       }
+    ],   
+    vendas: "PlaysTation",
+    plataformasOnline: "Xbox",
+    exclusivos: "PS5",   
+  }
+
   constructor() { }
 
   ngOnInit() {
