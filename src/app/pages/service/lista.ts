@@ -1,4 +1,5 @@
 export interface Informacao {
+    id: number;
     vendas: string;
     plataformasOnline: string;
     exclusivos: string;

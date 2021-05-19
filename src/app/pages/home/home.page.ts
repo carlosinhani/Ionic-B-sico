@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
 import { ListaService } from './../service/lista.service';
-import { Informacao } from '../service/lista';
 
 @Component({
   selector: 'app-home',
@@ -10,8 +8,6 @@ import { Informacao } from '../service/lista';
 })
 export class HomePage implements OnInit {
 
-  public lista: Informacao
-
   constructor(
     private dados: ListaService
   ) {
@@ -19,27 +15,9 @@ export class HomePage implements OnInit {
    }
 
   ngOnInit() {
-    this.dados.getLista().subscribe
-    (
-      (res)=> {
-        this.lista= res;
-      },
-      (error) => {
-        console.log("Error" + error);
-      }
-    )
+    
   }
 
-  // controle() {
-  //   this.dados.getLista().subscribe
-  //     (
-  //       (response) => {
-  //         this.lista = response;
-  //       },
-  //       (error) => {
-  //         console.log("Error" + error);
-  //       }
-  //     )
-  // }
+  
 
 }
