@@ -8,8 +8,8 @@
  
    <mat-tab-group>
      <mat-tab label="tab 1">
-       <div >
-       
+       <div *ngFor="let con of plataforma">
+      <p> vendas : {{ con.vendas }} </p>
       </div>
      </mat-tab>
     

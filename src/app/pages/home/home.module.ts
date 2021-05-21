@@ -1,3 +1,4 @@
+import { Informacao } from './../service/lista';
 import { MaterialModule } from './../../material.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -22,10 +23,11 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule
   ],
   declarations: 
-  [HomePage  
+  [HomePage,
+      
   ],
   providers:[
-    ListaService
+    ListaService,
   ]
 
 })
