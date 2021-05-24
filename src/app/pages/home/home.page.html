@@ -5,21 +5,23 @@
 </ion-header>
 
 <ion-content padding>
- 
-   <mat-tab-group>
-     <mat-tab label="tab 1">
-       <div *ngFor="let con of plataforma">
-      <p> vendas : {{ con.vendas }} </p>
+
+  <mat-tab-group>
+    <mat-tab label="tab 1">
+      <div>
+        <tr>
+          <p> vendas : {{ sera.vendas }} </p>
+        </tr>
       </div>
-     </mat-tab>
-    
-     
-     <mat-tab label="tab 2">
-       <h1></h1>
-      </mat-tab>
-      
-    </mat-tab-group>
-       
-        
-   
+    </mat-tab>
+
+
+    <mat-tab label="tab 2">
+      <h1></h1>
+    </mat-tab>
+
+  </mat-tab-group>
+
+
+
 </ion-content>

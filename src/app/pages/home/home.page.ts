@@ -9,7 +9,7 @@ import { ListaService } from './../service/lista.service';
 })
 export class HomePage implements OnInit {
 
-  plataforma: Informacao
+  sera: Informacao;
 
   constructor(
     private dados: ListaService
@@ -22,7 +22,7 @@ export class HomePage implements OnInit {
   lista(){
     this.dados.getConsole().subscribe(
       (res) => {
-        this.plataforma = res;
+        this.sera = res;
       },
       (error) => {
         console.log("Algo errado não esta certo" + error);

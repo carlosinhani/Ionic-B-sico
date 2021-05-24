@@ -1,5 +1,4 @@
-export class Informacao {
-    id: number;
+export interface Informacao {
     vendas: string;
     plataformasOnline: string;
     exclusivos: string;
